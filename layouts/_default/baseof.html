@@ -1,0 +1,12 @@
+<!doctype html>
+<html class="h-100" lang="en">
+  {{ partial "partials/head.html" . }}
+
+  <body class="min-h-100 bg-dark-gray washed-green code relative">
+    {{ partial "partials/header.html" . }}
+
+    <div class="pa5 cf">{{ block "main" . }} {{ end }}</div>
+
+    {{ partial "partials/footer.html" . }}
+  </body>
+</html>

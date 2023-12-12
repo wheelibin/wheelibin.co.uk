@@ -1,0 +1,15 @@
+<header class="flex justify-between">
+  <p class="pa2 ma0 bg-green">
+    <a class="link dim black" href="/">{{ .Site.Title }}</a>
+  </p>
+
+  <nav>
+    <ul class="list flex items-center ma0">
+      {{- range site.Menus.top }}
+      <li class="ttu pa2 ml1 bg-green">
+        <a class="link dim black" href="{{ .URL }}">{{ .Title }}</a>
+      </li>
+      {{- end }}
+    </ul>
+  </nav>
+</header>

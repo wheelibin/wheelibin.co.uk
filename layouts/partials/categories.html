@@ -1,0 +1,3 @@
+{{ range $k, $_ := . -}} {{ if $k }}, {{ end }}
+<a class="link dim green" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+{{- end }}
