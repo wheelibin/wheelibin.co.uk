@@ -1,0 +1,29 @@
+{{ define "main" }}
+<main>
+  <article>
+    <header>
+      <h1 class="">{{ .Title }}</h1>
+    </header>
+    {{ .Description }}
+  </article>
+  <!-- Ranges through content/post/*.md -->
+  <ul class="list pl0">
+    {{ range .Pages }}
+    <li class="pv4 bb">
+      <a class="link dim flex items-center" href="{{ .RelPermalink }}">
+        <img
+          class="ba br-100 mr3 mr5-l"
+          style="width: 100px; height: 100px"
+          src="{{ .Params.main_image}}"
+        />
+        <div class="">
+          <h5 class="mt0">{{ .Date.Format "Jan 2006" }}</h5>
+          <h3 class="f5 f3-l">{{ .LinkTitle }}</h3>
+          <div class="">{{ .Description }}</div>
+        </div>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}

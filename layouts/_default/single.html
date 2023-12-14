@@ -3,16 +3,16 @@
   <article>
     <header class="pb2">
       <div class="flex items-center justify-between">
-        <h1 class="f1 lh-title green">{{ .LinkTitle }}</h1>
+        <h1 class="f1 lh-title">{{ .LinkTitle }}</h1>
       </div>
       <div class="flex items-center justify-between">
-        <div class="washed-green">{{ .Description }}</div>
+        <div class="">{{ .Description }}</div>
         <div class="flex">
           <h5 class="ml2">{{ partial "partials/tags.html" . }}</h5>
         </div>
       </div>
     </header>
-    <div class="bt b--green">{{ .Content }}</div>
+    <div class="bt">{{ .Content }}</div>
   </article>
 </main>
 {{ end }}

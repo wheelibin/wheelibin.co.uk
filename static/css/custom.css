@@ -1,31 +1,59 @@
+body {
+  background-color: #2e3440;
+  color: #e5e9f0;
+}
+
 h1 {
-  color: #19a974;
+  color: #8fbcbb;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.15s ease-in;
+  color: #a3be8c;
+}
+a:hover {
+  color: #a3be8c;
+}
+.link:focus {
+  outline: none;
 }
 
 article a {
-  color: #e8fdf5;
-  text-decoration: none;
-  transition: color 0.15s ease-in;
+  color: #a3be8c;
 }
 
-article a:hover {
-  color: #19a974;
+.ba {
+  border-color: #8fbcbb;
+}
+
+.top-nav__item,
+.top-nav__item a {
+  background-color: #a3be8c;
+  color: #2e3440;
+}
+
+footer,
+footer a {
+  background-color: #a3be8c;
+  color: #2e3440;
 }
 
 blockquote {
-  background-color: #555555;
   padding: 0.5rem;
   margin: 0;
-  border: 1px dashed #19a974;
   opacity: 0.7;
 }
 
 .highlight pre {
-  border: 1px dashed #19a974;
   padding: 0.5rem;
 }
 
 figure img {
-  border: 1px dashed #19a974;
   margin-top: 0.5rem;
+}
+
+.home-banner {
+  color: #8fbcbb;
+  font-size: 0.8vw;
 }

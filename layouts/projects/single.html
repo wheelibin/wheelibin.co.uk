@@ -2,33 +2,31 @@
 <main>
   <article>
     <header>
-      <h1 class="f1 lh-title green">{{ .Title }}</h1>
+      <h1 class="f1 lh-title">{{ .Title }}</h1>
       {{ with .GetTerms "categories" }}
       <h5>
         [ {{ range $k, $_ := . -}} {{ if $k }}, {{ end }}
-        <a class="link dim green" href="{{ .RelPermalink }}"
-          >{{ .LinkTitle }}</a
-        >
+        <a class="link dim" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
         {{- end }} ]
       </h5>
       {{ end }}
     </header>
     <section class="cf flex items-center">
       <div class="fl w-third pa2">
-        <img class="ba b--green br4" src="{{ .Params.main_image }}" />
+        <img class="ba br4" src="{{ .Params.main_image }}" />
       </div>
 
       <div class="fl w-two-thirds pa5">
         <div class="flex items-center">
           <h3 class="f2 lh-content mr4 w-20">demo</h3>
-          <a class="f3 link dim green" href="{{ .Params.demo_url }}"
+          <a class="f3 link dim" href="{{ .Params.demo_url }}"
             >{{ .Params.demo_url }}</a
           >
         </div>
 
         <div class="flex items-center">
           <h3 class="f2 lh-content mr4 w-20">code</h3>
-          <a class="f3 link dim green" href="{{ .Params.repo_url }}"
+          <a class="f3 link dim" href="{{ .Params.repo_url }}"
             >{{ .Params.repo_url }}</a
           >
         </div>

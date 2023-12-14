@@ -5,9 +5,11 @@ title = "wheelibin.co.uk"
 SectionPagesMenu = "main"
 
 [params]
+  custom_css = ["css/custom.css"]
   Description = "assorted rubbish"
 
 [markup]
   [markup.highlight]
-    style = "doom-one"
+    # style = "doom-one"
     # style = "catppuccin-macchiato"
+    style = "nord"

@@ -28,7 +28,9 @@ This is my plugin definition for Lazy:
     dependencies = { { "nvim-lua/plenary.nvim" } },
     lazy = true,
     keys = {
-      { "<leader>x", "<Plug>RestNvim", desc = "Execute request" }
+      { "<leader>x", "<Plug>RestNvim",
+        desc = "Execute request"
+      }
     },
     config = function()
       require("rest-nvim").setup({

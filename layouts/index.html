@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<pre class="tc home-banner mt4">
+  ██╗    ██╗██╗  ██╗███████╗███████╗██╗     ██╗██████╗ ██╗███╗   ██╗    ██████╗ ██████╗    ██╗   ██╗██╗  ██╗
+  ██║    ██║██║  ██║██╔════╝██╔════╝██║     ██║██╔══██╗██║████╗  ██║   ██╔════╝██╔═══██╗   ██║   ██║██║ ██╔╝
+  ██║ █╗ ██║███████║█████╗  █████╗  ██║     ██║██████╔╝██║██╔██╗ ██║   ██║     ██║   ██║   ██║   ██║█████╔╝ 
+  ██║███╗██║██╔══██║██╔══╝  ██╔══╝  ██║     ██║██╔══██╗██║██║╚██╗██║   ██║     ██║   ██║   ██║   ██║██╔═██╗ 
+  ╚███╔███╔╝██║  ██║███████╗███████╗███████╗██║██████╔╝██║██║ ╚████║██╗╚██████╗╚██████╔╝██╗╚██████╔╝██║  ██╗
+   ╚══╝╚══╝ ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝ ╚═╝  ╚═╝
+</pre>
+
+<main >
+  <article class="project-article flex flex-wrap justify-center">
+
+    <!-- Ranges through content/projects/*.md -->
+    {{ range .Pages }}
+    <section class="tc fl mt5-l pa4 w-100 w-third-l">
+      <header>
+        <a href="{{ .RelPermalink }}" class="link dim">
+          <img class="ba br-100" style="width: 290px; height: 290px" src="{{ .Params.main_image}}" />
+          <h2 class="">{{ .LinkTitle }}</h2>
+        </a>
+      </header>
+      <div class="pa4-l">{{ .Description }}</div>
+    </section>
+    {{ end }}
+  </article>
+</main>
+
+{{ end }}

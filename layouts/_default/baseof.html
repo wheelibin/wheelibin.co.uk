@@ -2,10 +2,12 @@
 <html class="h-100" lang="en">
   {{ partial "partials/head.html" . }}
 
-  <body class="min-h-100 bg-dark-gray washed-green code relative">
+  <body class="min-h-100 code relative">
     {{ partial "partials/header.html" . }}
 
-    <div class="pa5 cf">{{ block "main" . }} {{ end }}</div>
+    <div class="pa6-l pa5-m pa2 cf content f5 lh-copy">
+      {{ block "main" . }} {{ end }}
+    </div>
 
     {{ partial "partials/footer.html" . }}
   </body>
