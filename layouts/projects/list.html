@@ -1,0 +1,27 @@
+{{ define "main" }}
+<main>
+  <article class="project-article">
+    <header>
+      <h1 class="">{{ .Title }}</h1>
+    </header>
+    <!-- "{{ .Content }}" pulls from the markdown content of the corresponding _index.md -->
+    {{ .Content }}
+
+    <!-- Ranges through content/projects/*.md -->
+    <section class="flex flex-wrap justify-start">
+      {{ range .Pages }}
+      <section class="tc pa4 w-100 w-third-l">
+        <header>
+          <a href="{{ .RelPermalink }}" class="link dim">
+            <img class="ba br-100 w-100 mw5" src="{{ .Params.main_image}}" />
+            <h5 class="f6">{{ .Date.Format "Jan 2006" }}</h5>
+            <h2 class="f4">{{ .LinkTitle }}</h2>
+          </a>
+        </header>
+        <div class="ph0 f6 f5-l lh-copy">{{ .Description }}</div>
+      </section>
+      {{ end }}
+    </section>
+  </article>
+</main>
+{{ end }}

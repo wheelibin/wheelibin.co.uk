@@ -57,3 +57,10 @@ figure img {
   color: #8fbcbb;
   font-size: 0.8vw;
 }
+
+.list__date {
+  color: #8fbcbb;
+}
+.list__desc {
+  color: #e5e9f0;
+}
