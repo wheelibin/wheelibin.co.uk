@@ -1,7 +1,7 @@
 ---
 title: About
 description: What's all this then?
-main_image: "/images/about.png"
+main_image: images/about.png
 menu:
   top:
     weight: 99

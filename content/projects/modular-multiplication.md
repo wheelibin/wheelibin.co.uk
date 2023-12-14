@@ -10,7 +10,7 @@ tags:
   - maths
 repo_url: https://github.com/wheelibin/modular-multiplication
 demo_url: https://wheelibin.github.io/modular-multiplication/
-main_image: /images/modular-multiplication.png
+main_image: images/modular-multiplication.png
 ---
 
 Inspired by this video:

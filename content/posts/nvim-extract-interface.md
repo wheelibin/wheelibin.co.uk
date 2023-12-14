@@ -6,5 +6,5 @@ categories:
   - blog
 tags:
   - neovim
-main_image: "/images/neovim.png"
+main_image: images/neovim.png
 ---

@@ -15,7 +15,10 @@
     <div class="mw9 center">
       <div class="cf">
         <div class="fl w-100 w-third-l pa2">
-          <img class="ba br4" src="{{ .Params.main_image }}" />
+          <img
+            class="ba br4"
+            src="{{ .Site.BaseURL }}{{ .Params.main_image }}"
+          />
         </div>
         <div class="fl w-100 w-two-thirds-l pa2 pl5-l">
           <div class="flex items-center">

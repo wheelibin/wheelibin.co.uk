@@ -14,7 +14,7 @@
         <img
           class="ba br-100 mr3 mr5-l"
           style="width: 100px; height: 100px"
-          src="{{ .Params.main_image}}"
+          src="{{ .Site.BaseURL }}{{ .Params.main_image}}"
         />
         <div class="">
           <div class="f6 mt0 mb0 list__date">{{ .Date.Format "Jan 2006" }}</div>

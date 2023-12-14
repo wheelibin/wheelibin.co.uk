@@ -9,5 +9,5 @@ tags:
   - p5.js
 repo_url: https://github.com/wheelibin/petri-dish
 demo_url: https://wheelibin.github.io/petri-dish/
-main_image: /images/petri-dish.png
+main_image: images/petri-dish.png
 ---

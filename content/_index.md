@@ -1,4 +1,4 @@
 ---
-title: "wheelibin.co.uk"
-description: "full of assorted rubbish"
+title: wheelibin.co.uk
+description: full of assorted rubbish
 ---

@@ -8,5 +8,5 @@ tags:
   - javascript
 repo_url: https://github.com/wheelibin/patchwork
 demo_url: https://wheelibin.github.io/patchwork/
-main_image: /images/patchwork.png
+main_image: images/patchwork.png
 ---

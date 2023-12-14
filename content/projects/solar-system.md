@@ -11,5 +11,5 @@ tags:
 repo_url: https://github.com/wheelibin/solar-system
 demo_url: https://wheelibin.github.io/solar-system/
 code_language: typescript
-main_image: /images/solar-system.png
+main_image: images/solar-system.png
 ---

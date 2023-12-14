@@ -1,13 +1,13 @@
 ---
-title: "rest.nvim - a neovim plugin for rest calls"
-description: "Goodbye Postman!"
+title: rest.nvim - a neovim plugin for rest calls
+description: Goodbye Postman!
 date: 2023-12-01T00:00:00Z
 categories:
   - blog
 tags:
   - neovim
   - plugin
-main_image: "/images/rest-nvim.png"
+main_image: images/rest-nvim.png
 ---
 
 # why?
@@ -64,4 +64,4 @@ content-type: application/json
 
 The call is then executed and the result is opened in a split, resulting in something like the below.
 
-{{< figure class="ma0" width=800 src="/images/rest-nvim.png" >}}
+{{< figure class="ma0" width=800 src="images/rest-nvim.png" >}}

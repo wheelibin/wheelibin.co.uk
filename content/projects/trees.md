@@ -10,5 +10,5 @@ tags:
   - random
 repo_url: https://github.com/wheelibin/trees
 demo_url: https://wheelibin.github.io/trees/
-main_image: /images/trees.png
+main_image: images/trees.png
 ---

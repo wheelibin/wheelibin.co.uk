@@ -10,7 +10,7 @@ tags:
 repo_url: https://github.com/wheelibin/spirograph
 demo_url: https://wheelibin.github.io/spirograph/
 code_language: typescript
-main_image: /images/spirograph.png
+main_image: images/spirograph.png
 ---
 
 A spirograph where the wheel doesn't slip and ruin everything
