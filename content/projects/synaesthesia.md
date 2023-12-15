@@ -11,4 +11,5 @@ tags:
 repo_url: https://github.com/wheelibin/synaesthesia
 demo_url: https://wheelibin.github.io/synaesthesia/
 main_image: images/synaesthesia.png
+list_image: images/synaesthesia.png
 ---

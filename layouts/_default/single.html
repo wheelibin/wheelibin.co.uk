@@ -1,18 +1,38 @@
 {{ define "main" }}
 <main>
   <article>
-    <header class="pb2">
-      <div class="flex items-center justify-between">
-        <h1 class="f1 lh-title">{{ .LinkTitle }}</h1>
-      </div>
-      <div class="flex items-center justify-between">
-        <div class="">{{ .Description }}</div>
-        <div class="flex">
-          <h5 class="ml2">{{ partial "partials/tags.html" . }}</h5>
+    {{ partial "partials/post-header.html" . }}
+
+    <!---->
+
+    {{ if isset .Params "main_image" }}
+    <div
+      class="article-image"
+      style="background-image: url('{{ .Site.BaseURL }}{{ .Params.main_image }}')"
+    >
+      {{ if isset .Params "repo_url" }}
+      <div class="article-image__info">
+        {{ if isset .Params "demo_url" }}
+        <div>
+          <h3>demo</h3>
+          <a href="{{ .Params.demo_url }}" target="_new"
+            >{{ .Params.demo_url }}</a
+          >
+        </div>
+        {{ end }}
+
+        <div>
+          <h3>source</h3>
+          <a href="{{ .Params.repo_url }}" target="_new"
+            >{{ .Params.repo_url }}</a
+          >
         </div>
       </div>
-    </header>
-    <div class="bt">{{ .Content }}</div>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    <div>{{ .Content }}</div>
   </article>
 </main>
 {{ end }}

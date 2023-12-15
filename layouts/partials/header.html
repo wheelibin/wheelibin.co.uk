@@ -1,15 +1,16 @@
-<header class="flex justify-between">
-  <p class="pa2 ma0 top-nav__item">
-    <a class="link dim" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-  </p>
-
-  <nav>
-    <ul class="list flex items-center ma0">
+<section class="top-nav-container">
+  <section class="top-nav">
+    <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    <input id="menu-toggle" type="checkbox" />
+    <label class="menu-button-container" for="menu-toggle">
+      <div class="menu-button"></div>
+    </label>
+    <ul class="menu">
       {{- range site.Menus.top }}
-      <li class="ttu pa2 ml1 top-nav__item">
-        <a class="link dim" href="{{ .URL }}">{{ .Title }}</a>
+      <li>
+        <a href="{{ .URL }}">{{ .Title }}</a>
       </li>
       {{- end }}
     </ul>
-  </nav>
-</header>
+  </section>
+</section>

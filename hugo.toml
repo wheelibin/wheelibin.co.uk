@@ -3,9 +3,10 @@ languageCode = "en-gb"
 title = "wheelibin.co.uk"
 
 SectionPagesMenu = "main"
+canonifyurls = "true"
 
 [params]
-  custom_css = ["css/custom.css"]
+  custom_css = ["css/header_footer.css","css/site.css"]
   Description = "assorted rubbish"
 
 [markup]

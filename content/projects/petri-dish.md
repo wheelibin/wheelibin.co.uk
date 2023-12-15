@@ -10,4 +10,5 @@ tags:
 repo_url: https://github.com/wheelibin/petri-dish
 demo_url: https://wheelibin.github.io/petri-dish/
 main_image: images/petri-dish.png
+list_image: images/petri-dish.png
 ---
