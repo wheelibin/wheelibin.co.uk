@@ -8,7 +8,7 @@ tags:
   - go
   - hue_lights
 repo_url: https://github.com/wheelibin/hugh
-demo_url: https://wheelibin.github.io/solar-system/
 code_language: typescript
 main_image: images/hugh.png
+list_image: images/hugh.png
 ---

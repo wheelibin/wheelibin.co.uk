@@ -4,5 +4,5 @@ description: random musings and notes mostly about neovim, split keyboards, and 
 main_image: images/rest-nvim.png
 menu:
   top:
-    weight: 20
+    weight: 10
 ---

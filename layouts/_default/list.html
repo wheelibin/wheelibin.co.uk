@@ -7,19 +7,18 @@
     {{ .Description }}
   </article>
   <!-- Ranges through content/post/*.md -->
-  <ul class="list pl0">
+  <ul class="">
     {{ range .Pages }}
-    <li class="pv4 bb">
-      <a class="link dim flex items-center" href="{{ .RelPermalink }}">
+    <li class="">
+      <a class="default-list-item" href="{{ .RelPermalink }}">
         <img
-          class="ba br-100 mr3 mr5-l"
-          style="width: 100px; height: 100px"
-          src="{{ .Site.BaseURL }}{{ .Params.main_image}}"
+          class="default-list-item__image"
+          src="{{ .Site.BaseURL }}{{ .Params.list_image}}"
         />
-        <div class="">
-          <div class="f6 mt0 mb0 list__date">{{ .Date.Format "Jan 2006" }}</div>
-          <h3 class="f5 f3-l">{{ .LinkTitle }}</h3>
-          <div class="f6 list__desc">{{ .Description }}</div>
+        <div class="default-list-item__info">
+          <h5>{{ .Date.Format "Jan 2006" }}</h5>
+          <h3>{{ .LinkTitle }}</h3>
+          <p>{{ .Description }}</p>
         </div>
       </a>
     </li>

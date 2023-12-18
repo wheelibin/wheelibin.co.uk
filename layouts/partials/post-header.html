@@ -1,0 +1,17 @@
+<header class="post-header">
+  <div class="post-header__title">
+    <div>
+      <h1>{{ .LinkTitle }}</h1>
+      <!-- {{ with .GetTerms "categories" }} -->
+      <!-- <h5 class="ml2">[ {{ partial "partials/categories.html" . }} ]</h5> -->
+      <!-- {{ end }} -->
+    </div>
+    <h3>{{ .Date.Format "Jan 2006" }}</h3>
+  </div>
+  <div class="post-header__desc">
+    <div class="post-header__desc-text">{{ .Description }}</div>
+    <div>
+      <h5>{{ partial "partials/tags.html" . }}</h5>
+    </div>
+  </div>
+</header>

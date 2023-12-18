@@ -7,6 +7,7 @@ categories:
 tags:
   - neovim
   - plugin
+list_image: images/rest-nvim.png
 main_image: images/rest-nvim.png
 ---
 
@@ -17,6 +18,10 @@ In the continual quest to never leave neovim, I stumbled across a plugin to make
 Like the vast majority of developers I have used Postman over the years for this task, but obviously that requires me to switch applications, and possibly (shock horror) use the mouse.
 
 # how?
+
+## plugin
+
+The plugin repo is here: https://github.com/rest-nvim/rest.nvim
 
 ## setup
 
@@ -64,4 +69,4 @@ content-type: application/json
 
 The call is then executed and the result is opened in a split, resulting in something like the below.
 
-{{< figure class="ma0" width=800 src="images/rest-nvim.png" >}}
+{{< figure class="post-image" src="/images/rest-nvim.png" >}}
