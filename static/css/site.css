@@ -240,6 +240,8 @@ code {
 @media (max-width: 768px) {
   .article-image {
     height: 15rem;
+    align-items: center;
+    justify-content: center;
   }
 }
 
