@@ -8,14 +8,14 @@
     {{ if isset .Params "main_image" }}
     <div
       class="article-image"
-      style="background-image: url('{{ .Site.BaseURL }}{{ .Params.main_image }}')"
+      style="background-image: url('{{ .Site.BaseURL }}{{ .Params.main_image }}'); background-position:{{ .Params.main_image_pos }}"
     >
       {{ if isset .Params "repo_url" }}
       <div class="article-image__info">
         {{ if isset .Params "demo_url" }}
         <div>
           <h3>demo</h3>
-          <a href="{{ .Params.demo_url }}" target="_new"
+          <a href="{{ .Params.demo_url }}" target="_blank"
             >{{ .Params.demo_url }}</a
           >
         </div>
@@ -23,7 +23,7 @@
 
         <div>
           <h3>source</h3>
-          <a href="{{ .Params.repo_url }}" target="_new"
+          <a href="{{ .Params.repo_url }}" target="_blank"
             >{{ .Params.repo_url }}</a
           >
         </div>
@@ -32,7 +32,7 @@
     </div>
     {{ end }}
 
-    <div>{{ .Content }}</div>
+    <div class="post-content">{{ .Content }}</div>
   </article>
 </main>
 {{ end }}

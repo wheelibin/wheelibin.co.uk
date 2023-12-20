@@ -4,6 +4,9 @@
   --color-frost-3: #81a1c1;
   --color-frost-4: #5e81ac;
 
+  --color-polar-1: #2e3440;
+  --color-polar-2: #3b4252;
+  --color-polar-3: #434c5e;
   --color-polar-4: #4c566a;
 
   --color-snowstorm-1: #d8dee9;
@@ -21,13 +24,13 @@
   --main-font-color: var(--color-snowstorm-2);
   --secondary-font-color: var(--color-frost-3);
 
-  --main-bg-color: #2e3440;
+  --main-bg-color: var(--color-polar-1);
   --link-color: var(--color-aurora-1);
 
   --main-highlight-color: #a3be8c;
 
   --color-h1: var(--main-highlight-color);
-  --color-h2: var(--main-font-color);
+  --color-h2: var(--color-frost-2);
   --color-h3: var(--color-frost-3);
 
   --image-border-color: #81a1c1;
@@ -36,9 +39,10 @@
   --color-menu-2: var(--color-frost-3);
   --color-menu-3: var(--color-frost-4);
 
-  --color-header-footer: #434c5e;
+  --color-header-footer: var(--color-polar-3);
   --color-border: var(--color-polar-4);
   --color-blockquote: var(--color-frost-2);
+  --color-code: var(--color-polar-2);
 }
 
 /* resets */
@@ -64,6 +68,7 @@ body {
   color: #e5e9f0;
   font-size: var(--base-font-size);
   font-family: var(--font-family);
+  line-height: 1.5;
 }
 @media (max-width: 768px) {
   body {
@@ -73,20 +78,39 @@ body {
 
 h1 {
   color: var(--color-h1);
+  line-height: 1.25;
 }
+
 h2 {
   color: var(--color-h2);
+  line-height: 1.25;
 }
 
 h3,
 h5 {
   color: var(--color-h3);
+  line-height: 1;
 }
 
 blockquote {
+  background-color: var(--color-frost-4);
   border: 1px dashed var(--color-blockquote);
   padding: 0 1rem;
   margin-left: 0;
+}
+img {
+  border: 1px solid var(--image-border-color);
+}
+
+table td,
+table th {
+  padding: 0.5rem 1rem;
+}
+
+code {
+  background-color: var(--color-code);
+  outline: 1px dotted var(--image-border-color);
+  white-space: pre-wrap;
 }
 
 .content {
@@ -105,6 +129,10 @@ blockquote {
     padding: 3rem 2rem;
   }
 }
+.post-content ul {
+  margin-left: 2rem;
+  list-style-type: square;
+}
 
 .home-banner {
   font-size: 0.6rem;
@@ -118,10 +146,6 @@ blockquote {
     font-size: 0.3rem;
     margin-bottom: 2rem;
   }
-}
-
-img {
-  border: 1px solid var(--image-border-color);
 }
 
 .grid {
@@ -204,7 +228,7 @@ img {
   width: 100%;
   height: 30rem;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   display: flex;
   align-items: start;
   justify-content: flex-end;
