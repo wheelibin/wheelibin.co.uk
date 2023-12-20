@@ -109,7 +109,7 @@ table th {
 
 code {
   background-color: var(--color-code);
-  outline: 1px dotted var(--image-border-color);
+  border: 1px dotted var(--image-border-color);
   white-space: pre-wrap;
 }
 
