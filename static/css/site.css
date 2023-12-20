@@ -109,8 +109,10 @@ table th {
 
 code {
   background-color: var(--color-code);
-  border: 1px dotted var(--image-border-color);
   white-space: pre-wrap;
+}
+.highlight {
+  border: 1px dotted var(--image-border-color);
 }
 
 .content {
