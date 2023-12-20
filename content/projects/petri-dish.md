@@ -12,3 +12,13 @@ demo_url: https://wheelibin.github.io/petri-dish/
 main_image: images/petri-dish.png
 list_image: images/petri-dish.png
 ---
+
+# About
+
+A simulation of very basic life forms floating around in...well, something.
+
+- Prey float around and will bounce off the perimeter and each other
+- Predators lock on to the nearest prey, chase it down, consume it, then repeat
+- Prey will run away from predators if within a certain range
+
+Seems to perform best in Chrome.

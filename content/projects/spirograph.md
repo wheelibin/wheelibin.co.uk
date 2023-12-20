@@ -14,4 +14,14 @@ main_image: images/spirograph.png
 list_image: images/spirograph.png
 ---
 
-A spirograph where the wheel doesn't slip and ruin everything
+# About
+
+A [spirograph](https://en.wikipedia.org/wiki/Spirograph) where the wheel/pen doesn't slip and ruin everything.
+
+You can add as many "cogs" as you like and specify the hole position on the cog.
+
+## Credits
+
+Massive credit to the article below for simplifying the maths behind plotting the points.
+
+https://www.physicstomato.com/spirographs/

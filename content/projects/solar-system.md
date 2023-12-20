@@ -15,4 +15,14 @@ main_image: images/solar-system.png
 list_image: images/solar-system.png
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi felis dui, rhoncus sed purus non, luctus faucibus lacus. Cras egestas libero eget felis lacinia, at molestie neque commodo. Mauris ultrices sem vel quam fringilla faucibus. Fusce a nunc ex. Fusce eu nibh ut augue porta sagittis eu nec nibh. Quisque feugiat bibendum ligula, id viverra tortor semper eget. Etiam molestie consectetur fermentum. Aliquam purus orci, laoreet eget sem ut, cursus rutrum est. Etiam tincidunt, dolor quis pretium rhoncus, felis massa cursus odio, eu dignissim massa orci eget dolor.
+# About
+
+- Each planet has a procedurally generated terrain using a noise/height map.
+
+- The 3rd planet from the star will always have Earth type colours, the others are random colours.
+
+- Sizes, orbit radiuses, number of planets, number of moons etc. are all randomly generated using a seeded random number, so you can get the exact solar system back by using the seed.
+
+- The solar system data is based on real-life values and you can see more info about each planet by clicking on the names in the gui panel.
+
+- The orbits are compressed, and the planets enlarged, in order to have a nice view of the solar system, but if you enable "True Scale" you will see the real scales and distances just to see how big space is :-)

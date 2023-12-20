@@ -14,6 +14,12 @@ main_image: images/modular-multiplication.png
 list_image: images/modular-multiplication.png
 ---
 
-Inspired by this video:
+# Eh?
 
-{{< youtube qhbuKbxJsk8 >}}
+A visualisation of multiplication tables with values wrapped round a given modulus value.
+
+It's more fun to play with than it sounds!
+
+Inspired by this excellent video:
+
+{{< youtube  qhbuKbxJsk8 >}}
