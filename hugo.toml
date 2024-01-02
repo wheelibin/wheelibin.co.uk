@@ -6,7 +6,7 @@ SectionPagesMenu = "main"
 canonifyurls = "true"
 
 [params]
-  custom_css = ["css/header_footer.css","css/site.css"]
+  custom_css = ["css/header_footer.css","css/site.css", "css/img.css"]
   Description = "assorted rubbish"
 
 [markup]

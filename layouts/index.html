@@ -16,7 +16,18 @@
       <div class="grid-cell">
         <header>
           <a href="{{ .RelPermalink }}">
-            <img class="home-image"  src="{{ .Params.main_image}}" />
+
+            {{ with resources.Get .Params.main_image }}
+              {{ with .Resize "300x300"}}
+                <img
+                  src="{{ .RelPermalink }}"
+                  class="home-image"
+                  width="{{ .Width }}"
+                  height="{{ .Height }}"
+                />
+              {{ end }}
+            {{ end }}
+
             <h2 >{{ .LinkTitle }}</h2>
           </a>
         </header>

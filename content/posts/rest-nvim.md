@@ -69,4 +69,6 @@ content-type: application/json
 
 The call is then executed and the result is opened in a split, resulting in something like the below.
 
-{{< figure class="post-image" src="/images/rest-nvim.png" >}}
+<!-- {{< figure class="post-image" src="/images/rest-nvim.png" >}} -->
+
+{{< img class="post-image" src="/images/rest-nvim.png" alt="rest.nvim" holder="LQIP" >}}

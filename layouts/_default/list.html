@@ -10,11 +10,21 @@
   <ul class="">
     {{ range .Pages }}
     <li class="">
+      <!---->
       <a class="default-list-item" href="{{ .RelPermalink }}">
+        {{ with resources.Get .Params.list_image }}
+        <!---->
+        {{ with .Resize "64x64"}}
         <img
+          src="{{ .RelPermalink }}"
           class="default-list-item__image"
-          src="{{ .Site.BaseURL }}{{ .Params.list_image}}"
+          width="{{ .Width }}"
+          height="{{ .Height }}"
         />
+        {{ end }}
+        <!---->
+        {{ end }}
+
         <div class="default-list-item__info">
           <h5>{{ .Date.Format "Jan 2006" }}</h5>
           <h3>{{ .LinkTitle }}</h3>

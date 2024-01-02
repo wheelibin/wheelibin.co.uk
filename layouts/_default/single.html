@@ -4,11 +4,22 @@
     {{ partial "partials/post-header.html" . }}
 
     <!---->
-
+    {{ $baseURL := .Site.BaseURL}}
+    <!---->
+    {{ $bgPos := .Params.main_image_pos }} {{ $bgSize := .Params.main_image_size
+    }}
+    <!---->
     {{ if isset .Params "main_image" }}
+    <!---->
+    {{ $raw := resources.Get .Params.main_image }}
+    <!---->
+    {{ with $raw.Resize "1440x webp drawing"}}
+    <!---->
     <div
       class="article-image"
-      style="background-image: url('{{ .Site.BaseURL }}{{ .Params.main_image }}'); background-position:{{ .Params.main_image_pos }}"
+      style="background-image: url('{{ $baseURL }}{{ .RelPermalink }}'); 
+             background-position: {{ $bgPos }};
+             background-size: {{ $bgSize }}"
     >
       {{ if isset .Params "repo_url" }}
       <div class="article-image__info">
@@ -30,8 +41,10 @@
       </div>
       {{ end }}
     </div>
+    <!---->
     {{ end }}
-
+    <!---->
+    {{ end }}
     <div class="post-content">{{ .Content }}</div>
   </article>
 </main>
