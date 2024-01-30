@@ -3,40 +3,35 @@
   <article>
     {{ partial "partials/post-header.html" . }}
 
-    <!---->
-    {{ $baseURL := .Site.BaseURL}}
-    <!---->
-    {{ $bgPos := .Params.main_image_pos }} {{ $bgSize := .Params.main_image_size
-    }}
-    <!---->
+    <!-- prettier-ignore -->
+    {{ $baseURL := .Site.BaseURL }}
+    {{ $repoUrl := .Params.repo_url }}
+    {{ $demoUrl := .Params.demo_url }}
+    {{ $bgPos := .Params.main_image_pos }}
+    {{ $bgSize := .Params.main_image_size }}
     {{ if isset .Params "main_image" }}
-    <!---->
     {{ $raw := resources.Get .Params.main_image }}
-    <!---->
     {{ with $raw.Resize "1440x webp drawing"}}
     <!---->
+
     <div
       class="article-image"
       style="background-image: url('{{ $baseURL }}{{ .RelPermalink }}'); 
              background-position: {{ $bgPos }};
              background-size: {{ $bgSize }}"
     >
-      {{ if isset .Params "repo_url" }}
+      {{ if $repoUrl }}
       <div class="article-image__info">
-        {{ if isset .Params "demo_url" }}
+        {{ if $demoUrl }}
         <div>
           <h3>demo</h3>
-          <a href="{{ .Params.demo_url }}" target="_blank"
-            >{{ .Params.demo_url }}</a
-          >
+          <a href="{{ $demoUrl }}" target="_blank">{{ $demoUrl }}</a>
         </div>
         {{ end }}
 
         <div>
           <h3>source</h3>
-          <a href="{{ .Params.repo_url }}" target="_blank"
-            >{{ .Params.repo_url }}</a
-          >
+          <a href="{{ $repoUrl }}" target="_blank">{{ $repoUrl }}</a>
         </div>
       </div>
       {{ end }}
